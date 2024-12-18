@@ -1,0 +1,2232 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"players_22\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.137.1102.0 (24.10)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "1b64da94-5074-40c4-b4e3-833dc33bfd45",
+        "fromColumn": "dob",
+        "fromTable": "players_22",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_427713c5-4087-4d5b-83dd-f6daf0638514"
+      },
+      {
+        "name": "1a335542-e9e1-4353-bf1e-5a00e25db0b0",
+        "fromColumn": "club_joined",
+        "fromTable": "players_22",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_b23afc5d-ea5f-483b-b30c-e7ada4546716"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "players_22",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "sofifa_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9dfacef3-9472-4b3a-bd2e-f339d776c4f5",
+            "sourceColumn": "sofifa_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "player_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "ImageUrl",
+            "dataType": "string",
+            "lineageTag": "19f67f5d-de91-4026-a234-3e230676dc92",
+            "sourceColumn": "player_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "short_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4348bfa9-abd3-4128-ba37-ea3382b566c3",
+            "sourceColumn": "short_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "long_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2066fce4-1c39-4d4d-b367-eaa36ae863bd",
+            "sourceColumn": "long_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "player_positions",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7d07c06d-b395-4a67-8ba7-1d5649714933",
+            "sourceColumn": "player_positions",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "overall",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "663f5ade-e942-4d83-9950-93a636a69870",
+            "sourceColumn": "overall",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "potential",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "36af2d6f-79d0-4129-b60c-8ac70b2a488b",
+            "sourceColumn": "potential",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "value_eur",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "\"€\"\\ #,0;-\"€\"\\ #,0;\"€\"\\ #,0",
+            "lineageTag": "8a094c02-df1a-4d01-921d-c2876f225a91",
+            "sourceColumn": "value_eur",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "wage_eur",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "\"€\"\\ #,0;-\"€\"\\ #,0;\"€\"\\ #,0",
+            "lineageTag": "1e105303-f474-4a8f-aba0-ffa002e2c21b",
+            "sourceColumn": "wage_eur",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0284b161-c7e1-4086-85bd-7e0d819e4e04",
+            "sourceColumn": "age",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "dob",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "5a994dd0-a762-4b82-86e9-e027c0464dd9",
+            "sourceColumn": "dob",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_427713c5-4087-4d5b-83dd-f6daf0638514"
+                },
+                "isDefault": true,
+                "relationship": "1b64da94-5074-40c4-b4e3-833dc33bfd45"
+              }
+            ]
+          },
+          {
+            "name": "height_cm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ab1d3789-675a-480e-8d8c-8ad6c20d2e36",
+            "sourceColumn": "height_cm",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "weight_kg",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "df6573f3-02fe-48c8-848f-a46994e55930",
+            "sourceColumn": "weight_kg",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "club_team_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6b95a583-f256-4d9d-b630-bbeb63c83531",
+            "sourceColumn": "club_team_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "club_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "29895f95-6979-402d-81a0-ddf1fd213273",
+            "sourceColumn": "club_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "league_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "36ea3ca9-38d7-4bb9-b85d-1a198548fac0",
+            "sourceColumn": "league_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "league_level",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7894f82b-34f1-41bf-aa25-6a4686b97396",
+            "sourceColumn": "league_level",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "club_position",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "02aada7b-b9a5-4cb5-820e-464a21d3759f",
+            "sourceColumn": "club_position",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "club_jersey_number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "95216bf0-daee-4560-bf77-28bfd6425942",
+            "sourceColumn": "club_jersey_number",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "club_loaned_from",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "db68e40c-0246-4ec6-9266-742483cc133b",
+            "sourceColumn": "club_loaned_from",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "club_joined",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "c089c124-13fc-46c1-bd53-bc62c55ed1fd",
+            "sourceColumn": "club_joined",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_b23afc5d-ea5f-483b-b30c-e7ada4546716"
+                },
+                "isDefault": true,
+                "relationship": "1a335542-e9e1-4353-bf1e-5a00e25db0b0"
+              }
+            ]
+          },
+          {
+            "name": "club_contract_valid_until",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d6253297-a2d6-496c-9124-fadf8286576a",
+            "sourceColumn": "club_contract_valid_until",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nationality_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c2453ed6-ffb3-4ba3-bfdc-2496e3d6da36",
+            "sourceColumn": "nationality_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nationality_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "47b8f070-0231-4117-9b50-657860030dc5",
+            "sourceColumn": "nationality_name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nation_team_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "38f8631f-4d2d-4392-8b8e-98e3f92f63a8",
+            "sourceColumn": "nation_team_id",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "nation_position",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "add29405-b905-4a86-99db-0e0125690139",
+            "sourceColumn": "nation_position",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nation_jersey_number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "601058d3-bbe7-47c8-974f-b0a78abaf578",
+            "sourceColumn": "nation_jersey_number",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "preferred_foot",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dc44032e-8442-47dc-b8e6-59c18a93ac0c",
+            "sourceColumn": "preferred_foot",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "weak_foot",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "94a15e94-0173-469c-ae19-57d5441cb697",
+            "sourceColumn": "weak_foot",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "skill_moves",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "771bee5a-37d9-4f6a-8a54-a733463c9dd4",
+            "sourceColumn": "skill_moves",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "international_reputation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "08c69eec-746d-4fb4-b5f5-8a2352474ca7",
+            "sourceColumn": "international_reputation",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "work_rate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bcb72213-1b5c-430d-8675-1fe1b6d45ceb",
+            "sourceColumn": "work_rate",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "body_type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ab425769-99e7-4144-90a2-32c7d264d393",
+            "sourceColumn": "body_type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "real_face",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b69779b9-7591-4d26-bfca-de3f162ce79a",
+            "sourceColumn": "real_face",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "release_clause_eur",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e026fe82-7e24-447b-ad48-574ca85f0f4f",
+            "sourceColumn": "release_clause_eur",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "player_tags",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e2171c1d-4ced-4d7a-897d-3cb49b130c8c",
+            "sourceColumn": "player_tags",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "player_traits",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "982a34fd-03db-469e-99ce-d6acdce2e565",
+            "sourceColumn": "player_traits",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "pace",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ef6714cd-718b-4c55-b035-5e698269ce68",
+            "sourceColumn": "pace",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "shooting",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f35ad710-6c58-48f7-89e9-f8b9e8b7290a",
+            "sourceColumn": "shooting",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "passing",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6b2939d4-fb6f-4dc6-a8f6-7cdffce1bd31",
+            "sourceColumn": "passing",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "dribbling",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "123cd5f4-7924-405e-b4fe-03488370bbcc",
+            "sourceColumn": "dribbling",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "defending",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3ebd9dbf-4923-4f7e-a197-1d3d958fcb04",
+            "sourceColumn": "defending",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "physic",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e4e3423a-a822-4f02-a6ab-6c523d83dbf9",
+            "sourceColumn": "physic",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "attacking_crossing",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eb198f1b-679e-4809-96a0-04a234b87e12",
+            "sourceColumn": "attacking_crossing",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "attacking_finishing",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d0b9eb55-315b-4b0f-bf49-2bcfdb8c843a",
+            "sourceColumn": "attacking_finishing",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "attacking_heading_accuracy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d699ccc8-72b5-4341-a294-e5e1daacde65",
+            "sourceColumn": "attacking_heading_accuracy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "attacking_short_passing",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ee529d7d-42ca-49f7-b0b4-05e941e41849",
+            "sourceColumn": "attacking_short_passing",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "attacking_volleys",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6f635b77-fc20-4889-8a04-b6df7b451b57",
+            "sourceColumn": "attacking_volleys",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "skill_dribbling",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "98b84db8-8149-4284-b097-4179dfa0a0f7",
+            "sourceColumn": "skill_dribbling",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "skill_curve",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "363e329a-77bb-4818-9c7d-487f60396fbf",
+            "sourceColumn": "skill_curve",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "skill_fk_accuracy",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7fbb86fd-017d-4544-a05a-9ec2d81992a8",
+            "sourceColumn": "skill_fk_accuracy",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "skill_long_passing",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "78bb8141-e343-4a28-8d88-00aefcbce8d3",
+            "sourceColumn": "skill_long_passing",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "skill_ball_control",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "772a8619-7353-4d59-9e3a-1f96b707ea84",
+            "sourceColumn": "skill_ball_control",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "movement_acceleration",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "408b60cc-918a-4f08-b700-552f286b551f",
+            "sourceColumn": "movement_acceleration",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "movement_sprint_speed",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bdfe4666-28b9-410d-be32-133e0e143a6c",
+            "sourceColumn": "movement_sprint_speed",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "movement_agility",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "915625aa-f4a9-49d2-8305-71cadfbf0709",
+            "sourceColumn": "movement_agility",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "movement_reactions",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2e4b0f23-ba51-4bec-9957-5188f52cb9d1",
+            "sourceColumn": "movement_reactions",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "movement_balance",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6edf11d6-66aa-4098-ae68-48fc1ed310c1",
+            "sourceColumn": "movement_balance",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "power_shot_power",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "74d492ca-5f98-4e8f-9135-ca148aefd9ae",
+            "sourceColumn": "power_shot_power",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "power_jumping",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "48d0b619-6ff3-43f9-a646-7f967939265c",
+            "sourceColumn": "power_jumping",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "power_stamina",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e3389ad8-0f0c-413e-b04b-a224ac8c8aa2",
+            "sourceColumn": "power_stamina",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "power_strength",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "df0ec3c4-ccbf-495e-aee8-4165699f7381",
+            "sourceColumn": "power_strength",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "power_long_shots",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0ed102b3-2b91-4909-8d65-3bda188ba47f",
+            "sourceColumn": "power_long_shots",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "mentality_aggression",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ae83862e-fa98-4145-9e1a-85632bf2c578",
+            "sourceColumn": "mentality_aggression",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "mentality_interceptions",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f6c4cdbe-aeee-4dd9-bfb5-fd014b984e7b",
+            "sourceColumn": "mentality_interceptions",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "mentality_positioning",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c7f5d753-6451-4242-9f38-29582e58e1f5",
+            "sourceColumn": "mentality_positioning",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "mentality_vision",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "55a16a0e-ec70-4c53-882b-9b6b3f2041d3",
+            "sourceColumn": "mentality_vision",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "mentality_penalties",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6a015ab7-8966-460b-96a4-43c809c525f2",
+            "sourceColumn": "mentality_penalties",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "mentality_composure",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "75da3ae8-3ac0-426d-885b-7b1c01acf8c1",
+            "sourceColumn": "mentality_composure",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "defending_marking_awareness",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8bb59ea9-30ba-4d3a-bf33-715e2bc613bb",
+            "sourceColumn": "defending_marking_awareness",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "defending_standing_tackle",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "947c9f95-6668-42f4-af87-171a8f67cbaf",
+            "sourceColumn": "defending_standing_tackle",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "defending_sliding_tackle",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "807a7691-fd4e-46c4-a93f-5cfb8fea15b6",
+            "sourceColumn": "defending_sliding_tackle",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "goalkeeping_diving",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2458d021-a077-4e12-a88c-eb15c7c95a33",
+            "sourceColumn": "goalkeeping_diving",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "goalkeeping_handling",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cddc30af-ebbf-4adb-8e72-062daa0e27fa",
+            "sourceColumn": "goalkeeping_handling",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "goalkeeping_kicking",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "941dd0e8-6f82-4de1-a29b-10052cc80f07",
+            "sourceColumn": "goalkeeping_kicking",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "goalkeeping_positioning",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c365648f-809b-4834-97c4-fa669f5c25b2",
+            "sourceColumn": "goalkeeping_positioning",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "goalkeeping_reflexes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fe8362b0-547a-4638-a81d-936d70960396",
+            "sourceColumn": "goalkeeping_reflexes",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "goalkeeping_speed",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "75caf30f-3700-49ec-9913-0cdfe743ed3e",
+            "sourceColumn": "goalkeeping_speed",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ls",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bb534a0e-1d10-46e6-8148-4a4842103108",
+            "sourceColumn": "ls",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "st",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cf734020-3269-424c-b808-5ff44e31f775",
+            "sourceColumn": "st",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rs",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7074a5a3-9fb9-4fb4-a461-86f5a319644b",
+            "sourceColumn": "rs",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "lw",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "503ec072-f63a-41b5-9eaf-fa47187c6299",
+            "sourceColumn": "lw",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "lf",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "24e4b33d-81f4-4400-8809-9534df3bd3d7",
+            "sourceColumn": "lf",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cf",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c52fd537-7eee-40d2-a95c-abde3b8512d9",
+            "sourceColumn": "cf",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rf",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7e2c1cd7-8a94-4565-9065-76c7f18ceccc",
+            "sourceColumn": "rf",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rw",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "be0e903f-f8f2-44e6-8d30-655de3abddcc",
+            "sourceColumn": "rw",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "lam",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "52a66ba6-9442-4181-81a3-4189f7af0e9f",
+            "sourceColumn": "lam",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cam",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "feb7ae7b-b1ec-4135-a664-a5327c5dca21",
+            "sourceColumn": "cam",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ram",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "881e4d22-96f5-41b9-a353-5715fda6b4d2",
+            "sourceColumn": "ram",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "lm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "830ca7af-6c3d-41ab-8c50-ef952a675110",
+            "sourceColumn": "lm",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "lcm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e54b1876-af2e-418e-8b0b-e1ce386714e5",
+            "sourceColumn": "lcm",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5c79dec8-89b0-48de-9fb1-b85fcd406a02",
+            "sourceColumn": "cm",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rcm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2e6f467e-768d-4593-b00a-9ba53a583638",
+            "sourceColumn": "rcm",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "85108e51-bfd8-4e91-9021-3a2366950cc1",
+            "sourceColumn": "rm",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "lwb",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2b4d9398-9477-4dff-b2c2-9d11ac423d4e",
+            "sourceColumn": "lwb",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ldm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "edd05c83-9331-4e18-9d07-231809b16100",
+            "sourceColumn": "ldm",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cdm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7071029c-6706-46ea-b468-9cde0d0468d6",
+            "sourceColumn": "cdm",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rdm",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "88541ab5-83ac-45f4-9837-2a29bb55f663",
+            "sourceColumn": "rdm",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rwb",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e461960e-41ec-4efd-9ffe-7936b4dd4186",
+            "sourceColumn": "rwb",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "lb",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dfeb90cc-500f-4e39-aad6-50c414ae7774",
+            "sourceColumn": "lb",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "lcb",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "91f1b864-4169-4f6c-b3ed-5d97bbd285f0",
+            "sourceColumn": "lcb",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cb",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f4c41066-29ea-4a5f-958e-6087e7288ac5",
+            "sourceColumn": "cb",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rcb",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "434ef8b4-dcbc-493d-a55c-c006683c2511",
+            "sourceColumn": "rcb",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "rb",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "639345d1-9941-497d-86b3-8d3f0b8d8512",
+            "sourceColumn": "rb",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "gk",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6eb321c9-0504-4f29-a1f2-706f4e0e55ae",
+            "sourceColumn": "gk",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "player_face_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "ImageUrl",
+            "dataType": "string",
+            "lineageTag": "5727b347-5ab4-492f-a5cd-29a6d704dcaa",
+            "sourceColumn": "player_face_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "club_logo_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "ImageUrl",
+            "dataType": "string",
+            "lineageTag": "5be03f21-1cd5-42f6-a93e-cfeca2ce1ce0",
+            "sourceColumn": "club_logo_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "club_flag_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "ImageUrl",
+            "dataType": "string",
+            "lineageTag": "becd8d2e-0097-4d5f-b011-90b47028dcc1",
+            "sourceColumn": "club_flag_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nation_logo_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "ImageUrl",
+            "dataType": "string",
+            "lineageTag": "3c511415-f2a4-444f-a82c-b8321401e5d9",
+            "sourceColumn": "nation_logo_url",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nation_flag_url",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f7e73239-d387-433d-897c-6970395af9eb",
+            "sourceColumn": "nation_flag_url",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "6b9dcb3a-2c7c-47fe-8d7f-28d20f1d9208",
+        "partitions": [
+          {
+            "name": "players_22",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(Web.Contents(\"https://raw.githubusercontent.com/tyketchum/ReportRepo/main/players_22.csv\"),[Delimiter=\",\", Columns=110, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"sofifa_id\", Int64.Type}, {\"player_url\", type text}, {\"short_name\", type text}, {\"long_name\", type text}, {\"player_positions\", type text}, {\"overall\", Int64.Type}, {\"potential\", Int64.Type}, {\"value_eur\", Int64.Type}, {\"wage_eur\", Int64.Type}, {\"age\", Int64.Type}, {\"dob\", type date}, {\"height_cm\", Int64.Type}, {\"weight_kg\", Int64.Type}, {\"club_team_id\", Int64.Type}, {\"club_name\", type text}, {\"league_name\", type text}, {\"league_level\", Int64.Type}, {\"club_position\", type text}, {\"club_jersey_number\", Int64.Type}, {\"club_loaned_from\", type text}, {\"club_joined\", type date}, {\"club_contract_valid_until\", Int64.Type}, {\"nationality_id\", Int64.Type}, {\"nationality_name\", type text}, {\"nation_team_id\", Int64.Type}, {\"nation_position\", type text}, {\"nation_jersey_number\", Int64.Type}, {\"preferred_foot\", type text}, {\"weak_foot\", Int64.Type}, {\"skill_moves\", Int64.Type}, {\"international_reputation\", Int64.Type}, {\"work_rate\", type text}, {\"body_type\", type text}, {\"real_face\", type text}, {\"release_clause_eur\", Int64.Type}, {\"player_tags\", type text}, {\"player_traits\", type text}, {\"pace\", Int64.Type}, {\"shooting\", Int64.Type}, {\"passing\", Int64.Type}, {\"dribbling\", Int64.Type}, {\"defending\", Int64.Type}, {\"physic\", Int64.Type}, {\"attacking_crossing\", Int64.Type}, {\"attacking_finishing\", Int64.Type}, {\"attacking_heading_accuracy\", Int64.Type}, {\"attacking_short_passing\", Int64.Type}, {\"attacking_volleys\", Int64.Type}, {\"skill_dribbling\", Int64.Type}, {\"skill_curve\", Int64.Type}, {\"skill_fk_accuracy\", Int64.Type}, {\"skill_long_passing\", Int64.Type}, {\"skill_ball_control\", Int64.Type}, {\"movement_acceleration\", Int64.Type}, {\"movement_sprint_speed\", Int64.Type}, {\"movement_agility\", Int64.Type}, {\"movement_reactions\", Int64.Type}, {\"movement_balance\", Int64.Type}, {\"power_shot_power\", Int64.Type}, {\"power_jumping\", Int64.Type}, {\"power_stamina\", Int64.Type}, {\"power_strength\", Int64.Type}, {\"power_long_shots\", Int64.Type}, {\"mentality_aggression\", Int64.Type}, {\"mentality_interceptions\", Int64.Type}, {\"mentality_positioning\", Int64.Type}, {\"mentality_vision\", Int64.Type}, {\"mentality_penalties\", Int64.Type}, {\"mentality_composure\", Int64.Type}, {\"defending_marking_awareness\", Int64.Type}, {\"defending_standing_tackle\", Int64.Type}, {\"defending_sliding_tackle\", Int64.Type}, {\"goalkeeping_diving\", Int64.Type}, {\"goalkeeping_handling\", Int64.Type}, {\"goalkeeping_kicking\", Int64.Type}, {\"goalkeeping_positioning\", Int64.Type}, {\"goalkeeping_reflexes\", Int64.Type}, {\"goalkeeping_speed\", Int64.Type}, {\"ls\", type text}, {\"st\", type text}, {\"rs\", type text}, {\"lw\", Int64.Type}, {\"lf\", type text}, {\"cf\", type text}, {\"rf\", type text}, {\"rw\", Int64.Type}, {\"lam\", type text}, {\"cam\", type text}, {\"ram\", type text}, {\"lm\", type text}, {\"lcm\", type text}, {\"cm\", type text}, {\"rcm\", type text}, {\"rm\", type text}, {\"lwb\", type text}, {\"ldm\", type text}, {\"cdm\", type text}, {\"rdm\", type text}, {\"rwb\", type text}, {\"lb\", type text}, {\"lcb\", type text}, {\"cb\", type text}, {\"rcb\", type text}, {\"rb\", type text}, {\"gk\", type text}, {\"player_face_url\", type text}, {\"club_logo_url\", type text}, {\"club_flag_url\", type text}, {\"nation_logo_url\", type text}, {\"nation_flag_url\", type text}}),",
+                "    #\"Removed Errors\" = Table.RemoveRowsWithErrors(#\"Changed Type\", {\"lw\"})",
+                "in",
+                "    #\"Removed Errors\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_c110f997-ee1d-4d45-a6a6-272dfa88775e",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "1084ece2-1c33-4d46-a0fa-88b78f2be743",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "cab25c60-1bc5-4297-aa48-3319c5b9aeac",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "abbb052a-802a-4276-80c3-a813fef8a384",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "e8e25eea-f398-42eb-a10a-85278e5e70fe",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "7ad9df29-4c8d-469e-96b1-eeb90a3bbe66",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "ce76bbcd-6b89-4225-ba96-4e678b1d6f59",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "9c3cd88e-18e8-4bb1-a797-0feecb9ef290",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "9dc4ac39-a93c-4e2e-8176-928f5b3fa92b",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "5b33d7c5-271a-43c7-9376-27d8ec93c27e",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "742da3ac-3a3c-4964-aa14-d278ad3ebdd4",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "c9ae3fe8-43dc-4db5-95d8-847e8127ebc3",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "27f6527e-c98c-49ba-917b-17d81bc5787d"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "b516d165-39c4-401b-9395-c530928c75a6",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_c110f997-ee1d-4d45-a6a6-272dfa88775e",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_427713c5-4087-4d5b-83dd-f6daf0638514",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "e6ff1e06-3686-478c-a8b1-94f46d98cea1",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "36266912-2bc0-4929-b160-a2daa541dbc1",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "6d498711-6e0d-4f53-824e-ab7983fad30f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "3785e116-3e01-45e5-87b5-6d331bdebf9c",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "8053f54f-86fd-43c8-8228-082c11447b9b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "1a768664-560c-4ffb-a0b1-b82564b2a316",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "34f01dc4-decf-438b-9c8b-52761675c90c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "21530083-d8b3-4209-a4ed-ea34a2783977",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "95999879-3612-4086-9de2-61f09166d065",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "098dc346-a077-4f77-b435-b78c1dfcc224",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "487e9da2-2a02-4a99-98a5-161097882f56",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "61e1dbeb-7f5c-412a-ad6e-515cfe860bd6"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "f6e392b9-0514-4019-a5d6-b4c645831bbe",
+        "partitions": [
+          {
+            "name": "LocalDateTable_427713c5-4087-4d5b-83dd-f6daf0638514",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('players_22'[dob])), 1, 1), Date(Year(MAX('players_22'[dob])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_b23afc5d-ea5f-483b-b30c-e7ada4546716",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "ac064dee-85ed-48b4-99e2-cb720ba32655",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "6da9cd14-b1aa-45bd-b0fc-68cda1b71074",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "0cf0a1a8-30de-4233-b9e4-79104c05a07f",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "720857e6-8ce0-48b3-9709-51e9fe060eec",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "221ff28d-51e4-4901-b807-612093558286",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "3f6d38d2-a307-4b7d-9811-ea85448c2797",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "28680881-ba21-4166-9b6a-76510b85b1fd",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "8164f10a-39e7-446e-8ea5-931dc0345dd2",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "efc83b7a-dbca-41ae-8761-e93786340303",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "ab190c82-6cfb-4a64-aec0-5fb37c44263c",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "df00c85a-008d-4148-9260-a7ab60a49961",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "cf753fca-ced7-40fb-879d-705e4dcf21e7"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "b7a09a96-8fcc-47ee-b42b-a957ae596ff3",
+        "partitions": [
+          {
+            "name": "LocalDateTable_b23afc5d-ea5f-483b-b30c-e7ada4546716",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('players_22'[club_joined])), 1, 1), Date(Year(MAX('players_22'[club_joined])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}
