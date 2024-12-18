@@ -1,0 +1,323 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "RefreshDataflow",
+        "typeProperties": {
+          "dataflowId": "542d9a2a-85e4-4b0d-a44f-e659f2be6b8d",
+          "workspaceId": "8c5c6dbd-7983-43f0-a4f6-7b0bb5b3cd06",
+          "notifyOption": "NoNotification"
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Dataflow1",
+        "dependsOn": []
+      },
+      {
+        "type": "Copy",
+        "typeProperties": {
+          "source": {
+            "type": "LakehouseTableSource",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "openweather"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "openweather",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "0e2effe1-95bb-455c-a7b6-a92b64e46481",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "sink": {
+            "type": "LakehouseTableSink",
+            "tableActionOption": "Append",
+            "partitionOption": "None",
+            "datasetSettings": {
+              "type": "LakehouseTable",
+              "typeProperties": {
+                "table": "openweather_copy"
+              },
+              "schema": [],
+              "linkedService": {
+                "name": "openweather",
+                "properties": {
+                  "type": "Lakehouse",
+                  "typeProperties": {
+                    "artifactId": "0e2effe1-95bb-455c-a7b6-a92b64e46481",
+                    "workspaceId": "00000000-0000-0000-0000-000000000000",
+                    "rootFolder": "Tables"
+                  },
+                  "annotations": []
+                }
+              },
+              "annotations": []
+            }
+          },
+          "translator": {
+            "type": "TabularTranslator",
+            "mappings": [
+              {
+                "source": {
+                  "name": "lat",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "lat",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "lon",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "lon",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "timezone",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "timezone",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.temp",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.temp",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.feels_like",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.feels_like",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.pressure",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.pressure",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.humidity",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.humidity",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.dew_point",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.dew_point",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.uvi",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.uvi",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.clouds",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.clouds",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.visibility",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.visibility",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.wind_speed",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.wind_speed",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.wind_deg",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.wind_deg",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.wind_gust",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.wind_gust",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.weather.main",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "hourly.weather.main",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.weather.description",
+                  "type": "String",
+                  "physicalType": "string"
+                },
+                "sink": {
+                  "name": "hourly.weather.description",
+                  "physicalType": "string"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.pop",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.pop",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.rain.1h",
+                  "type": "Double",
+                  "physicalType": "double"
+                },
+                "sink": {
+                  "name": "hourly.rain.1h",
+                  "physicalType": "double"
+                }
+              },
+              {
+                "source": {
+                  "name": "hourly.local_date_time",
+                  "type": "DateTime",
+                  "physicalType": "timestamp"
+                },
+                "sink": {
+                  "name": "hourly.local_date_time",
+                  "physicalType": "timestamp"
+                }
+              },
+              {
+                "source": {
+                  "name": "updateUTC",
+                  "type": "DateTime",
+                  "physicalType": "timestamp"
+                },
+                "sink": {
+                  "name": "updateUTC",
+                  "physicalType": "timestamp"
+                }
+              }
+            ],
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          },
+          "enableStaging": false
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Copy data1",
+        "dependsOn": [
+          {
+            "activity": "Dataflow1",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,526 @@
+{
+  "compatibilityLevel": 1604,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.138.7462.2 (Main)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DatabaseQuery\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"WebModelingEdit\"]"
+      }
+    ],
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "False"
+          }
+        ],
+        "expression": [
+          "let",
+          "    database = Sql.Database(\"YTEUREMZ3S2URJYNSNHN5ZYYW4-XVWVZDEDPHYEHJHWPMF3LM6NAY.datawarehouse.fabric.microsoft.com\", \"70f6c6d5-3e45-4083-af5f-05177b54fbad\")",
+          "in",
+          "    database"
+        ],
+        "kind": "m",
+        "lineageTag": "97e477ef-327a-4921-a579-08297384a965"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "openweather",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Latitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SummarizeBy"
+              },
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "DataCategory"
+              }
+            ],
+            "dataCategory": "Latitude",
+            "dataType": "double",
+            "description": "Latitude",
+            "displayFolder": "Geography",
+            "lineageTag": "35764be1-ec6b-4669-b567-601f38443eb7",
+            "sourceColumn": "lat",
+            "sourceLineageTag": "lat",
+            "sourceProviderType": "float",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Longitude",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SummarizeBy"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "DataCategory"
+              },
+              {
+                "property": "Name"
+              }
+            ],
+            "dataCategory": "Longitude",
+            "dataType": "double",
+            "description": "Longitude",
+            "displayFolder": "Geography",
+            "lineageTag": "ec2490d6-c969-424f-bf0a-e576e7388839",
+            "sourceColumn": "lon",
+            "sourceLineageTag": "lon",
+            "sourceProviderType": "float",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Time Zone",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              }
+            ],
+            "dataType": "string",
+            "description": "Time zone for the reported location.",
+            "displayFolder": "Date and Time",
+            "lineageTag": "f3a26d26-289d-413f-b0f7-a7c30778170a",
+            "sourceColumn": "timezone",
+            "sourceLineageTag": "timezone",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "hourly.temp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "e4cf8728-78ac-4999-ab24-497cc0692ae3",
+            "sourceColumn": "hourly.temp",
+            "sourceLineageTag": "hourly.temp",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.feels_like",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "64207b80-ab1d-44a0-8025-e773679ffb04",
+            "sourceColumn": "hourly.feels_like",
+            "sourceLineageTag": "hourly.feels_like",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.pressure",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f02489b8-098d-4b16-991e-a965dc9d382b",
+            "sourceColumn": "hourly.pressure",
+            "sourceLineageTag": "hourly.pressure",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.humidity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f769e205-9f9a-4920-b4e9-6bf8d67a047d",
+            "sourceColumn": "hourly.humidity",
+            "sourceLineageTag": "hourly.humidity",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.dew_point",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "27387fba-949e-416e-9da5-dffb5d14d5c1",
+            "sourceColumn": "hourly.dew_point",
+            "sourceLineageTag": "hourly.dew_point",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.uvi",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f05ea263-2a91-4be9-a483-3b9b94ff5b04",
+            "sourceColumn": "hourly.uvi",
+            "sourceLineageTag": "hourly.uvi",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.clouds",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c78e391d-a58b-4245-b44c-e4b1fe4f7de9",
+            "sourceColumn": "hourly.clouds",
+            "sourceLineageTag": "hourly.clouds",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.visibility",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "690d5ccc-893c-4c2e-bd00-877c6f944f93",
+            "sourceColumn": "hourly.visibility",
+            "sourceLineageTag": "hourly.visibility",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.wind_speed",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "8a52ddf3-8a70-4c69-bbcb-9b84ff83ace7",
+            "sourceColumn": "hourly.wind_speed",
+            "sourceLineageTag": "hourly.wind_speed",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.wind_deg",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0cecb26a-92bc-4099-bdc3-a01e1879801b",
+            "sourceColumn": "hourly.wind_deg",
+            "sourceLineageTag": "hourly.wind_deg",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.wind_gust",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "920ad03f-1d49-4a58-8dfd-d949039b3d80",
+            "sourceColumn": "hourly.wind_gust",
+            "sourceLineageTag": "hourly.wind_gust",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.weather.main",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2788cdff-7259-41a9-ace4-33693d9d3a36",
+            "sourceColumn": "hourly.weather.main",
+            "sourceLineageTag": "hourly.weather.main",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "hourly.weather.description",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "89bf7bfb-4d9f-49a0-b365-0fe46febf30e",
+            "sourceColumn": "hourly.weather.description",
+            "sourceLineageTag": "hourly.weather.description",
+            "sourceProviderType": "varchar(8000)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "hourly.pop",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7ab31396-6acd-4b31-8e60-bafeb87f74e1",
+            "sourceColumn": "hourly.pop",
+            "sourceLineageTag": "hourly.pop",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "hourly.rain.1h",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "94821c7e-07ae-4c7b-bf61-e1dd20cfcc3b",
+            "sourceColumn": "hourly.rain.1h",
+            "sourceLineageTag": "hourly.rain.1h",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Datetime Local",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Name"
+              }
+            ],
+            "dataType": "dateTime",
+            "displayFolder": "Date and Time",
+            "formatString": "General Date",
+            "lineageTag": "f649b5db-3385-4034-8179-e61b5ff4763f",
+            "sourceColumn": "hourly.local_date_time",
+            "sourceLineageTag": "hourly.local_date_time",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Last Update UTC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              }
+            ],
+            "dataType": "dateTime",
+            "description": "Date and time that the data was last updated shown in universal coordinated time (UTC)",
+            "displayFolder": "Date and Time",
+            "formatString": "General Date",
+            "lineageTag": "66ccc6b7-cf7e-417d-8b87-8484471cfc2f",
+            "sourceColumn": "updateUTC",
+            "sourceLineageTag": "updateUTC",
+            "sourceProviderType": "datetime2",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "efb79a5e-c2ab-4a4f-bba4-7686ef3665d4",
+        "partitions": [
+          {
+            "name": "openweather",
+            "mode": "directLake",
+            "source": {
+              "entityName": "openweather",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo",
+              "type": "entity"
+            }
+          }
+        ],
+        "sourceLineageTag": "[dbo].[openweather]"
+      }
+    ]
+  }
+}

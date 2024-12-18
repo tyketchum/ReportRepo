@@ -1,0 +1,81 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.57\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}",
+      "displayName": "FIFA!",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "35ed453fb0872738ddb6",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"51e37cfc46de411c2775\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.034843205574914,\"y\":0,\"z\":0,\"width\":269.82578397212546,\"height\":72.47386759581882,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"players_22.club_name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"players_22\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"club_name\"},\"Name\":\"players_22.club_name\",\"NativeReferenceName\":\"Club\"}]},\"columnProperties\":{\"players_22.club_name\":{\"displayName\":\"Club\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 72.47,
+          "width": 269.83,
+          "x": 10.03,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"8b97536598b003205627\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.711297071129707,\"y\":176.73640167364016,\"z\":2000,\"width\":1269.2887029288702,\"height\":398.1032078103208,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"players_22.player_face_url\"},{\"queryRef\":\"players_22.short_name\"},{\"queryRef\":\"Sum(players_22.age)\"},{\"queryRef\":\"players_22.nation_logo_url\"},{\"queryRef\":\"players_22.club_logo_url\"},{\"queryRef\":\"players_22.league_name\"},{\"queryRef\":\"players_22.player_positions\"},{\"queryRef\":\"Avg(players_22.overall)\"},{\"queryRef\":\"Sum(players_22.value_eur)\"},{\"queryRef\":\"Sum(players_22.potential)\"},{\"queryRef\":\"players_22.player_traits\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"players_22\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"short_name\"},\"Name\":\"players_22.short_name\",\"NativeReferenceName\":\"Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"overall\"}},\"Function\":1},\"Name\":\"Avg(players_22.overall)\",\"NativeReferenceName\":\"Overall Rating\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"player_positions\"},\"Name\":\"players_22.player_positions\",\"NativeReferenceName\":\"Positions\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"value_eur\"}},\"Function\":0},\"Name\":\"Sum(players_22.value_eur)\",\"NativeReferenceName\":\"Value\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"player_face_url\"},\"Name\":\"players_22.player_face_url\",\"NativeReferenceName\":\"Player\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"nation_logo_url\"},\"Name\":\"players_22.nation_logo_url\",\"NativeReferenceName\":\"Country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"potential\"}},\"Function\":1},\"Name\":\"Sum(players_22.potential)\",\"NativeReferenceName\":\"Potential Rating\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"player_traits\"},\"Name\":\"players_22.player_traits\",\"NativeReferenceName\":\"Player Traits\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"club_logo_url\"},\"Name\":\"players_22.club_logo_url\",\"NativeReferenceName\":\"Club\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"league_name\"},\"Name\":\"players_22.league_name\",\"NativeReferenceName\":\"Club League\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"age\"}},\"Function\":1},\"Name\":\"Sum(players_22.age)\",\"NativeReferenceName\":\"Average of age\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"overall\"}},\"Function\":1}}}]},\"columnProperties\":{\"players_22.player_face_url\":{\"displayName\":\"Player\"},\"players_22.short_name\":{\"displayName\":\"Name\"},\"players_22.nation_logo_url\":{\"displayName\":\"Country\"},\"players_22.player_positions\":{\"displayName\":\"Positions\"},\"Sum(players_22.value_eur)\":{\"displayName\":\"Value\"},\"players_22.club_logo_url\":{\"displayName\":\"Club\"},\"players_22.league_name\":{\"displayName\":\"Club League\"},\"players_22.player_traits\":{\"displayName\":\"Player Traits\"},\"Avg(players_22.overall)\":{\"displayName\":\"Overall Rating\"},\"Sum(players_22.potential)\":{\"displayName\":\"Potential Rating\"},\"Sum(players_22.age)\":{\"displayName\":\"Age\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"324.39387757484957D\"}}}},\"selector\":{\"metadata\":\"players_22.player_traits\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"155.23357664233578D\"}}}},\"selector\":{\"metadata\":\"players_22.league_name\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"68.99270072992701D\"}}}},\"selector\":{\"metadata\":\"Sum(players_22.potential)\"}}]}}}",
+          "filters": "[]",
+          "height": 398.10,
+          "width": 1269.29,
+          "x": 10.71,
+          "y": 176.74,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"b83d89c7bdb0d462000a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":279.86062717770034,\"y\":0,\"z\":1000,\"width\":236.37630662020908,\"height\":72.47386759581882,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"players_22.nationality_name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"players_22\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"nationality_name\"},\"Name\":\"players_22.nationality_name\",\"NativeReferenceName\":\"Country\"}]},\"columnProperties\":{\"players_22.nationality_name\":{\"displayName\":\"Country\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selfFilter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"players_22\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Contains\":{\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"nationality_name\"}},\"Right\":{\"Literal\":{\"Value\":\"'united state'\"}}}},\"Annotations\":{\"PowerBI.MParameterBehavior\":1}}]}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"players_22\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"nationality_name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'United States'\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 72.47,
+          "width": 236.38,
+          "x": 279.86,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Test new tab",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e97c06cd058ca0c86f85",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"15ed13852c0a63a0995f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":114.36964504283965,\"y\":211.50550795593634,\"z\":0,\"width\":726.9522643818849,\"height\":471.57894736842104}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"players_22.short_name\"},{\"queryRef\":\"players_22.club_name\"},{\"queryRef\":\"players_22.player_positions\"},{\"queryRef\":\"Sum(players_22.potential)\"},{\"queryRef\":\"players_22.nation_flag_url\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"players_22\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"short_name\"},\"Name\":\"players_22.short_name\",\"NativeReferenceName\":\"short_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"club_name\"},\"Name\":\"players_22.club_name\",\"NativeReferenceName\":\"club_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"player_positions\"},\"Name\":\"players_22.player_positions\",\"NativeReferenceName\":\"player_positions\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"potential\"},\"Name\":\"Sum(players_22.potential)\",\"NativeReferenceName\":\"potential\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"nation_flag_url\"},\"Name\":\"players_22.nation_flag_url\",\"NativeReferenceName\":\"nation_flag_url\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"potential\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 471.58,
+          "width": 726.95,
+          "x": 114.37,
+          "y": 211.51,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

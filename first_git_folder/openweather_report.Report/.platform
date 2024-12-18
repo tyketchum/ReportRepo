@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "openweather_report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "783be114-6b9e-4e8e-8545-e4c78e9e72b8"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "its_called_soccer"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "57887b5f-4dc2-4ebe-b92e-c1f642ec5573"
+  }
+}

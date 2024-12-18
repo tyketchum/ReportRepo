@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "its_called_soccer"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "eacb9fea-19ee-44f0-92c4-af322997fa4d"
+  }
+}
