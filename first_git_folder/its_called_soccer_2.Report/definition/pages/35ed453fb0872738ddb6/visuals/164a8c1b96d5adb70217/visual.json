@@ -1,0 +1,108 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.3.0/schema.json",
+  "name": "164a8c1b96d5adb70217",
+  "position": {
+    "x": 673.448275862069,
+    "y": 139.65517241379311,
+    "z": 3001,
+    "height": 470.68965517241378,
+    "width": 586.551724137931,
+    "tabOrder": 3001
+  },
+  "visual": {
+    "visualType": "lineStackedColumnComboChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "players_22"
+                    }
+                  },
+                  "Property": "short_name"
+                }
+              },
+              "queryRef": "players_22.short_name",
+              "nativeQueryRef": "short_name",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "players_22"
+                        }
+                      },
+                      "Property": "overall"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(players_22.overall)",
+              "nativeQueryRef": "Sum of overall"
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "players_22"
+                        }
+                      },
+                      "Property": "potential"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(players_22.potential)",
+              "nativeQueryRef": "Sum of potential"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "players_22"
+                      }
+                    },
+                    "Property": "overall"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
